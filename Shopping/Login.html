@@ -1,0 +1,603 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Online Shopping</title>
+    <!-- Favicon-->
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="cDzkXUAeOhoK4BFWydKh8WTq1bVcsEh99QEBq9cq">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="#">
+  <link rel="icon" href="#" type="image/x-icon">
+  
+    <!-- Google Fonts -->
+
+
+    <!-- Css -->
+  
+  
+</head>
+
+<body  style="background: url('');" class="login-page ls-closed auth-background">
+  
+  <div class="preloader-it">
+    <div class="la-anim-1"></div>
+  </div>
+  
+  
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  
+
+<!-- <body class="login-page sidebar-collapse" > -->
+<style type="text/css">
+    input {
+    outline: none;
+    border: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+}
+
+textarea:focus, input:focus {
+  border-color: transparent !important;
+}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }
+input:focus::-moz-placeholder { color:transparent; }
+input:focus:-ms-input-placeholder { color:transparent; }
+
+textarea:focus::-webkit-input-placeholder { color:transparent; }
+textarea:focus:-moz-placeholder { color:transparent; }
+textarea:focus::-moz-placeholder { color:transparent; }
+textarea:focus:-ms-input-placeholder { color:transparent; }
+
+input::-webkit-input-placeholder { color: #999999; }
+input:-moz-placeholder { color: #999999; }
+input::-moz-placeholder { color: #999999; }
+input:-ms-input-placeholder { color: #999999; }
+
+textarea::-webkit-input-placeholder { color: #999999; }
+textarea:-moz-placeholder { color: #999999; }
+textarea::-moz-placeholder { color: #999999; }
+textarea:-ms-input-placeholder { color: #999999; }
+
+/*---------------------------------------------*/
+button {
+    outline: none !important;
+    border: none;
+    background: transparent;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+iframe {
+    border: none !important;
+}
+
+
+/*//////////////////////////////////////////////////////////////////
+[ Utility ]*/
+
+
+.txt2 {
+  /*font-family: Poppins-Regular;*/
+  font-size: 13px;
+  line-height: 1.5;
+  color: #fff;
+  float: right;
+}
+.txt2:hover{
+    color:#f54b13;
+}
+
+
+/*//////////////////////////////////////////////////////////////////
+[ login ]*/
+
+.limiter {
+  width: 100%;
+  margin: 0 auto;
+  /*min-height: 100vh;*/
+}
+
+.container-login100 {
+  width: 100%; 
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  margin-top: 70px;
+  /*background: #9053c7;
+  background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: -o-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: -moz-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: linear-gradient(-135deg, #c850c0, #4158d0);*/
+}
+
+.wrap-login100 {
+    width: 850px;
+    background: #0a0a0a52;
+    border-radius: 10px;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 70px 89px 50px 95px;
+    position: relative;
+}
+
+/*------------------------------------------------------------------
+[  ]*/
+.login100-pic {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #f5eded45;
+    border-radius: 50%;
+    position: relative;
+    background-color: #f5eded45;
+    box-shadow: 1px 1px 12px -5px #f9f6f6;
+    margin-top: 10px;
+}
+.login100-pic img {
+  max-width: 100%;
+}
+
+
+/*------------------------------------------------------------------
+[  ]*/
+.login100-form {
+  width: 290px;
+}
+
+.login100-form-title {
+  /*font-family: Poppins-Bold;*/
+  font-size: 32px;
+  color: white;
+  line-height: 1.2;
+  text-align: center;
+
+  width: 100%;
+  display: block;
+  padding-bottom: 45px;
+}
+
+
+/*---------------------------------------------*/
+.wrap-input100 {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+
+.input100 {
+  /*font-family: Poppins-Medium;*/
+  font-size: 15px;
+  line-height: 1.5;
+  color: #666666;
+
+  display: block;
+  width: 100%;
+  background: #e6e6e6;
+  height: 50px;
+  border-radius: 25px;
+  padding: 0 30px 0 68px;
+}
+
+
+/*------------------------------------------------------------------
+[ Focus ]*/
+.focus-input100 {
+  display: block;
+  position: absolute;
+  border-radius: 25px;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 0px 0px;
+  color: rgba(87,184,70, 0.8);
+}
+
+.input100:focus + .focus-input100 {
+  -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
+  animation: anim-shadow 0.5s ease-in-out forwards;
+}
+
+@-webkit-keyframes anim-shadow {
+  to {
+    box-shadow: 0px 0px 70px 25px;
+    opacity: 0;
+  }
+}
+
+@keyframes  anim-shadow {
+  to {
+    box-shadow: 0px 0px 70px 25px;
+    opacity: 0;
+  }
+}
+
+.symbol-input100 {
+  font-size: 15px;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  border-radius: 25px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-left: 35px;
+  pointer-events: none;
+  color: #666666;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.input100:focus + .focus-input100 + .symbol-input100 {
+  color: #f96332;
+  padding-left: 28px;
+}
+
+/*------------------------------------------------------------------
+[ Button ]*/
+.container-login100-form-btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.login100-form-btn {
+  /*font-family: Montserrat-Bold;*/
+  font-size: 15px;
+  line-height: 1.5;
+  color: #fff;
+  text-transform: uppercase;
+
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  background: #f96332;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.login100-form-btn:hover {
+  background: #de410d;
+}
+.logo-login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.page-header {
+    min-height: 100vh;
+    max-height: 999px;
+    padding: 0;
+    color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+}
+.page-header .page-header-image {
+    position: absolute;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.page-header footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 15px;
+}
+.footer .copyright {
+    float: right;
+}
+/*.text-danger{
+    top: 120px;
+    color: #FFEB3B!important;
+    position: absolute;
+    font-size: 14px;
+    right: 144px;
+}*/
+.error-alert {
+    font-size: 12px;
+    position: absolute;
+    top: 115px;
+    padding: .40rem 1.25rem;
+    padding-right: 4rem;
+}
+.error-alert button.close{
+    padding: 0px 12px 5px 12px;
+}
+.login100-pic-m{
+    display: none;
+}
+.copyright a {
+    color: #f54b13;
+}
+
+/*------------------------------------------------------------------
+[ Responsive ]*/
+
+
+
+@media (max-width: 992px) {
+  .wrap-login100 {
+        padding: 73px 90px 50px 85px;
+  }
+
+  .login100-pic {
+    width: 250px;
+    height: 250px;
+  }
+
+  .login100-form {
+    width: 50%;
+  }
+  .login100-pic .logo-login img{
+        width: 108px;
+  }
+  .login100-pic .logo-login h3{
+    font-size: 24px;
+  }
+  .page-header footer {
+    padding-bottom: 5px;
+    font-size: 14px;
+}
+
+}
+
+@media (max-width: 768px) {
+  .wrap-login100 {
+    padding: 70px 80px 50px 80px;
+  }
+  .login100-pic {
+    display: none;
+  }
+.login100-pic-m{
+    display: block;
+    width: 100%;
+}
+  .login100-form {
+    width: 100%;
+  }
+    .container-login100 {
+    margin-top: 35px;
+}
+.page-header footer {
+    padding-bottom: 5px;
+    font-size: 10px;
+}
+.error-alert{
+    font-size: 11px;
+    left: 50%;
+    transform: translatex(-50%);
+    top: 160px;
+}
+}
+
+@media (max-width: 576px) {
+  .wrap-login100 {
+    padding: 100px 15px 33px 15px;
+  }
+  .container-login100 {
+    margin-top: 35px;
+}
+.error-alert {
+    font-size: 10px;
+    top: 187px;
+    padding-right: 3.5rem;
+    width: 248px;
+}
+}
+
+
+/*------------------------------------------------------------------
+[ Alert validate ]*/
+
+.validate-input {
+  position: relative;
+}
+
+.alert-validate::before {
+  content: attr(data-validate);
+  position: absolute;
+  max-width: 70%;
+  background-color: white;
+  border: 1px solid #c80000;
+  border-radius: 13px;
+  padding: 4px 25px 4px 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 8px;
+  pointer-events: none;
+
+  /*font-family: Poppins-Medium;*/
+  color: #c80000;
+  font-size: 13px;
+  line-height: 1.4;
+  text-align: left;
+
+  visibility: hidden;
+  opacity: 0;
+
+  -webkit-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+
+.alert-validate::after {
+  content: "\f06a";
+  font-family: FontAwesome;
+  display: block;
+  position: absolute;
+  color: #c80000;
+  font-size: 15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 13px;
+}
+
+.alert-validate:hover:before {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 992px) {
+  .alert-validate::before {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+ 
+</style>
+<div class="page-header clear-filter" filter-color="">
+<div class="page-header-image" style="background-image:url('img/wallpaper-1576409.jpg')"></div>
+<div class="limiter" >
+        <div class="container-login100">
+            <div class="wrap-login100">
+                <div class="login100-pic js-tilt" data-tilt>
+                    <div class="logo-login"> 
+                         <img src="img/logo.jpg" alt="IMG">
+                         <h3 style=" margin-left: 18px;">SHOPPING</h3>
+                    </div>
+                </div>
+                <div class="login100-pic-m" >
+                    <div style="text-align: center;padding-bottom: 10px;"> 
+                         <img src="img/fashion_girl_paris_shopping_abstract_2560x1440_hd-wallpaper-1634148.jpg" alt="IMG" style="display: inline-block;margin-bottom: 6px;">
+                         <h4 style="display: inline-block;vertical-align: bottom;">PRICE LIST</h4>
+                    </div>
+                </div>
+
+               <form method="POST" action="http://demo.gyso.in/pricelist/login">
+                <input type="hidden" name="_token" value="cDzkXUAeOhoK4BFWydKh8WTq1bVcsEh99QEBq9cq">
+                    <span class="login100-form-title">
+                        Sign In
+                    </span>
+                        
+                            
+                    <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                        <input class="input100" type="email" autocomplete="off"  name="email" value="" placeholder="Enter Email" required>
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <div class="wrap-input100 validate-input" data-validate = "Password is required">
+                        <input class="input100" type="password" name="password" placeholder="Password" required>
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                            <i class="fa fa-lock" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                                       <div style="float: left;padding-left: 20px;">
+                        <input id="checkbox_2"  name="remember" value=""  type="checkbox" >
+                        <label for="checkbox_2" id="check" style="margin-bottom: 0rem;"> Keep me logged in</label>
+                    </div>
+                    
+                    <div class="container-login100-form-btn">
+                        <button class="login100-form-btn">
+                            Login
+                        </button>
+                    </div>
+
+                    <div class="text-center p-t-12">
+                        <a class="txt2" href="register.html">
+                            New User Register.!
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>            
+    </div>
+    <footer class="footer">
+      <div class="container">
+      
+       <!--  <div class="copyright" id="copyright">
+            
+        <p>Made with <a href="https://demo.gyso.in/pricelist/dealerlogin" target="_blank">Now Online Shopping</a> by Creative<a href="https://demo.gyso.in/pricelist/dealerlogin" target="_blank"> Gayu</a></p>
+        </div> -->
+      </div>
+    </footer>
+
+  </div>
+  <!--   Core JS Files   -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+
+<!-- </body> -->
+
+
+
+    <!-- JavaScript -->
+    
+  <!-- jQuery -->
+  
+
+<link rel='stylesheet' type='text/css' property='stylesheet' href='//demo.gyso.in/pricelist/_debugbar/assets/stylesheets?v=1578751848'><script type='text/javascript' src='//demo.gyso.in/pricelist/_debugbar/assets/javascript?v=1578751848'></script><script type="text/javascript">jQuery.noConflict(true);</script>
+
+</body>
+</html>
